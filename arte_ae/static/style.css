@@ -1,8 +1,12 @@
 :root{
   --roxo: #6C63FF;
   --cinza: #E6E8EC;
+  --branco: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: grid;
   grid-template-areas:'nav'
@@ -16,13 +20,49 @@ body {
   grid-template-columns: 100% ;
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
 /* navbar */
 nav {
-  grid-area: nav;
-  display: flex;
+  align-items: center;
   background-color: var(--roxo);
-  height: 10vh;
+  display: flex;
+  grid-area: nav;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0px 50px 0px 15px;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;  
+  color: var(--branco);
+  font-size: 16pt;
+}
+nav .logo img {
+  width: 60px;
+  height: 60px;
+}
+nav .menu {
+  height: 100%;
+  display: flex;
+}
+nav .menu .item-menu{
+  align-items: center;
+  color: var(--branco);
+  display: flex;
+  height: 100%;
+  margin-left: 20px;
+  padding: 5px;
+}
+nav .menu .item-menu:nth-child(5){
+  margin-left: 50px;
+}
+nav .menu .item-menu:hover {
+  background-color: var(--branco);
+  color: var(--roxo);
 }
 
 /* header */
@@ -33,7 +73,7 @@ header {
 }
 
 /* about */
-.about {
+#about {
   grid-area: about;
   display: flex;
   background-color: var(--roxo);
@@ -48,7 +88,7 @@ main {
 }
 
 /* contact */
-.contact {
+#contact {
   grid-area: contact;
   display: flex;
   background-color: var(--roxo);
