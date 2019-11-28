@@ -29,10 +29,11 @@ nav {
   background-color: var(--roxo);
   display: flex;
   grid-area: nav;
+  width: 100%;
   height: 70px;
   justify-content: space-between;
-  padding: 0px 50px 0px 15px;
   text-transform: uppercase;
+  position: fixed;
 }
 
 nav .logo {
@@ -40,6 +41,7 @@ nav .logo {
   align-items: center;  
   color: var(--branco);
   font-size: 16pt;
+  padding: 20px;
 }
 nav .logo img {
   width: 60px;
@@ -48,6 +50,7 @@ nav .logo img {
 nav .menu {
   height: 100%;
   display: flex;
+  padding: 20px;
 }
 nav .menu .item-menu{
   align-items: center;
@@ -69,7 +72,7 @@ nav .menu .item-menu:hover {
 header {
   grid-area: header;
   display: flex;
-  height: 90vh;
+  height: 100vh;
 }
 
 /* about */
