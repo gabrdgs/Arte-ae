@@ -1,0 +1,62 @@
+:root{
+  --roxo: #6C63FF;
+  --cinza: #E6E8EC;
+}
+
+body {
+  display: grid;
+  grid-template-areas:'nav'
+                      'header'
+                      'about'
+                      'main'
+                      'contact'
+                      'footer';
+  
+                        
+  grid-template-columns: 100% ;
+  margin: 0;
+}
+
+/* navbar */
+nav {
+  grid-area: nav;
+  display: flex;
+  background-color: var(--roxo);
+  height: 10vh;
+}
+
+/* header */
+header {
+  grid-area: header;
+  display: flex;
+  height: 90vh;
+}
+
+/* about */
+.about {
+  grid-area: about;
+  display: flex;
+  background-color: var(--roxo);
+  height: 100vh;
+}
+
+/* main */
+main {
+  grid-area: main;
+  display: flex;
+  height: 100vh;
+}
+
+/* contact */
+.contact {
+  grid-area: contact;
+  display: flex;
+  background-color: var(--roxo);
+  height: 100vh;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  height: 15vh;
+}
