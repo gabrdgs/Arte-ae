@@ -90,6 +90,11 @@ main {
   height: 100vh;
 }
 
+.card-body{
+  width: 18rem;
+  
+}
+
 /* contact */
 #contact {
   grid-area: contact;
