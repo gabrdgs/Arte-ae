@@ -92,7 +92,12 @@ main {
 
 .card-body{
   width: 18rem;
-  
+  background-color: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  box-shadow: 5rem . 5rem . 3rem;
 }
 
 /* contact */
