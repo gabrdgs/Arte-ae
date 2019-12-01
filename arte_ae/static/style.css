@@ -111,6 +111,7 @@ header {
   display: flex;
   background-color: var(--roxo);
   height: 100vh;
+  padding: 100px 100px 0px 100px;
 }
 
 /* main */
@@ -118,6 +119,7 @@ main {
   grid-area: main;
   display: flex;
   height: 100vh;
+  padding: 100px 100px 0px 100px;
 }
 
 .card-body{
@@ -136,10 +138,12 @@ main {
   display: flex;
   background-color: var(--roxo);
   height: 100vh;
+  padding: 100px 100px 0px 100px;
 }
 
 footer {
   grid-area: footer;
   display: flex;
-  height: 15vh;
+  height: 30px;
+  padding: 25px;
 }
