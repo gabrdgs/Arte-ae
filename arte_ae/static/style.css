@@ -1,6 +1,6 @@
 :root{
   --roxo: #6C63FF;
-  --cinza: #E6E8EC;
+  --cinza: rgb(174, 175, 179);
   --branco: #FFFFFF;
 }
 
@@ -19,6 +19,7 @@ body {
                         
   grid-template-columns: 100% ;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -71,9 +72,38 @@ nav .menu .item-menu:hover {
 /* header */
 header {
   grid-area: header;
-  display: flex;
   height: 100vh;
+  padding: 100px 100px 0px 100px;
 }
+.content-header {
+  display: flex;
+  width: 100%;
+}
+.item-header-text {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 50%;
+}
+.item-header-text h1 {
+  font-size: 60pt;
+  color: var(--roxo);
+  margin-bottom: 0;
+}
+.item-header-text h2 {
+  font-size: 20pt;
+  color: var(--cinza);
+  margin-top: 0;
+  line-height: 42px;
+}
+.item-header-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
 
 /* about */
 #about {
@@ -97,7 +127,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 2rem;
-  box-shadow: 5rem . 5rem . 3rem;
+  box-shadow: 5rem 0 5rem 0 3rem;
 }
 
 /* contact */
