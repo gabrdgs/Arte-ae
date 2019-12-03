@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-areas:'nav'
                       'header'
+                      'statistics'
                       'about'
                       'main'
                       'contact'
@@ -113,7 +114,14 @@ header {
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
-
+/* statistics */
+#statistics {
+  grid-area: statistics;
+  display: flex;
+  background-color: var(--roxo);
+  height: 100vh;
+  padding: 100px 100px 0px 100px;
+}
 /* main */
 main {
   grid-area: main;
