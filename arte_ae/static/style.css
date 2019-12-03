@@ -118,18 +118,39 @@ header {
 main {
   grid-area: main;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
 
-.card-body{
-  width: 18rem;
-  background-color: violet;
+.search{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-  box-shadow: 5rem 0 5rem 0 3rem;
+}
+
+.content-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.content-card .card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 22%;
+  border-radius: 5px;
+}
+
+.content-card .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.content-card .card img{
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 35%;
+}
+
+.container-card {
+  padding: 2px 16px;
 }
 
 /* contact */
