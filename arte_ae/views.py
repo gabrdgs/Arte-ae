@@ -1,23 +1,41 @@
-from django.shortcuts import render
-from arte_ae.forms import UserModelForm
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
-def index(req):
-  return render(req, 'index.html')
+@login_required
+def painel_de_controle(request):
+  return render(request, 'painel-de-controle.html')
 
-def login(req):
-  return render(req, 'login.html')
+def index(request):
+  return render(request, 'index.html')
 
-def cadastro_usuario(req):
-  form = UserModelForm(req.POST or None)
+def do_login(request):
+  if request.method == 'POST':
+    username = request.POST.get('username')
+    password = request.POST.get('password')
 
+    user = authenticate(username=username, password=password)
+    if user is not None:
+      login(request, user)
+      return redirect('/painel')
+    
+  return render(request, 'login.html')
+
+def do_logout(request):
+  logout(request)
+  return redirect('/login')
+
+def cadastro_usuario(request):
+  form = UserCreationForm(request.POST)
   if form.is_valid():
     form.save()
     context = {
       'msg': 'Cadastrado com sucesso'
     }
-    return render(req, 'cadastro-usuario.html', context)
+    return render(request, 'cadastro-usuario.html', context)
   context = {
     'form': form
   }
-  return render(req, 'cadastro-usuario.html', context)
+  return render(request, 'cadastro-usuario.html', context)
