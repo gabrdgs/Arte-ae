@@ -1,6 +1,6 @@
 :root{
-  --roxo: #ff596a;
-  --cinza: rgb(174, 175, 179);
+  --primaria: #ff596a;
+  --cinza: #eff1f7;
   --branco: #FFFFFF;
 }
 
@@ -28,7 +28,7 @@ a {
 /* navbar */
 nav {
   align-items: center;
-  background-color: var(--roxo);
+  background-color: var(--primaria);
   display: flex;
   grid-area: nav;
   width: 100%;
@@ -67,7 +67,7 @@ nav .menu .item-menu:nth-child(5){
 }
 nav .menu .item-menu:hover {
   background-color: var(--branco);
-  color: var(--roxo);
+  color: var(--primaria);
 }
 
 /* header */
@@ -89,7 +89,7 @@ header {
 }
 .item-header-text h1 {
   font-size: 60pt;
-  color: var(--roxo);
+  color: var(--primaria);
   margin-bottom: 0;
 }
 .item-header-text h2 {
@@ -105,23 +105,24 @@ header {
   width: 50%;
 }
 
-
 /* about */
 #about {
   grid-area: about;
   display: flex;
-  background-color: white;
+  background-color: var(--branco);
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
+
 /* statistics */
 #statistics {
   grid-area: statistics;
   display: flex;
-  background-color:var(--roxo);
+  background-color:var(--primaria);
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
+
 /* main */
 main {
   grid-area: main;
@@ -129,7 +130,7 @@ main {
   flex-direction: column;
   height: auto;
   padding: 100px 100px 0px 100px;
-  background-color: var(--roxo);
+  background-color: var(--primaria);
 }
 
 .search{
@@ -139,7 +140,6 @@ main {
   align-items: center;
   margin-bottom: 20px;
 }
-
 
 .content-card{
   display: flex;
@@ -153,7 +153,7 @@ main {
   width: 22%;
   border-radius: 5px;
   margin-bottom: 50px;
-  background-color: white;
+  background-color: var(--branco);
 }
 
 .content-card .card:hover {
@@ -174,7 +174,7 @@ main {
 #contact {
   grid-area: contact;
   display: flex;
-  background-color: white;
+  background-color: var(--branco);
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
@@ -184,5 +184,68 @@ footer {
   display: flex;
   height: 30px;
   padding: 25px;
-  background-color: var(--roxo) ;
+  background-color: var(--primaria) ;
 }
+
+/* cadastro */
+.container-cadastro {
+  align-items: center; 
+  display: flex; 
+  flex-direction:column; 
+  justify-content: center; 
+  background-color: var(--primaria);
+  height: 100vh;
+}
+
+.container-cadastro .formulario-cadastro {
+  align-items: center;
+  background-color: var(--cinza);
+  display: flex; 
+  flex-direction:column;  
+  width: 35%;
+  padding: 0px 0px 50px 0px;
+  border-radius: 15px;
+}
+
+.container-cadastro .formulario-cadastro form {
+  align-items: flex-start;
+  display: flex; 
+  flex-direction:column;
+  width: 100%;
+}
+.container-cadastro .formulario-cadastro form .form-group label {
+  font-size: 14pt;
+}
+.container-cadastro .formulario-cadastro form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;  
+}
+.container-cadastro .formulario-cadastro form .form-control{
+  border: .5px solid var(--primaria);
+  border-radius: 2px;
+  height: 30px;
+  width: 75%;
+  padding: 0px 0px 0px 15px;
+}
+.container-cadastro .formulario-cadastro form .form-control:focus {
+  border: .5px solid transparent;
+}
+.container-cadastro .formulario-cadastro form button{
+  color: var(--branco);
+  border: none;
+  border-radius: 2px;
+  background-color: var(--primaria);
+  margin: 0px 48px 0px 0px;
+  align-self: flex-end;
+  height: 30px;
+  width: 150px;
+}
+.container-cadastro .formulario-cadastro form button:hover{
+  background-color: var(--branco);
+  color: var(--primaria);
+  border: .5px solid var(--primaria);
+  cursor: pointer;
+}
+
