@@ -19,6 +19,8 @@ from arte_ae import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('login/', views.login),
-    path('cadastrar/', views.cadastro_usuario)
+    path('login/', views.do_login),
+    path('logout/', views.do_logout),
+    path('cadastrar/', views.cadastro_usuario),
+    path('painel/', views.painel_de_controle),
 ]
