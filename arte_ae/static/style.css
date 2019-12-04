@@ -1,5 +1,5 @@
 :root{
-  --roxo: #6C63FF;
+  --roxo: #ff596a;
   --cinza: rgb(174, 175, 179);
   --branco: #FFFFFF;
 }
@@ -128,7 +128,7 @@ main {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 50px 100px 0px 100px;
+  padding: 100px 100px 0px 100px;
 }
 
 .search{
