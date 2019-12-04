@@ -110,7 +110,7 @@ header {
 #about {
   grid-area: about;
   display: flex;
-  background-color: var(--roxo);
+  background-color: white;
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
@@ -118,7 +118,7 @@ header {
 #statistics {
   grid-area: statistics;
   display: flex;
-  background-color: var(--roxo);
+  background-color:var(--roxo);
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
@@ -129,6 +129,7 @@ main {
   flex-direction: column;
   height: auto;
   padding: 100px 100px 0px 100px;
+  background-color: var(--roxo);
 }
 
 .search{
@@ -172,7 +173,7 @@ main {
 #contact {
   grid-area: contact;
   display: flex;
-  background-color: var(--roxo);
+  background-color: white;
   height: 100vh;
   padding: 100px 100px 0px 100px;
 }
@@ -182,4 +183,5 @@ footer {
   display: flex;
   height: 30px;
   padding: 25px;
+  background-color: var(--roxo) ;
 }
