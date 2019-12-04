@@ -153,6 +153,7 @@ main {
   width: 22%;
   border-radius: 5px;
   margin-bottom: 50px;
+  background-color: white;
 }
 
 .content-card .card:hover {
