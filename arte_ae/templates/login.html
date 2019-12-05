@@ -1,6 +1,27 @@
 {% extends 'base.html' %}
+{% block menu %}
+  <a href="/" class="item-menu">Voltar para página inicial</a>
+{% endblock %}
 {% block content %}
-  <div class="container-login" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <a href="/cadastrar">cadastre-se</a>
+  <div class="container-lc">
+    <div class="formulario-lc">
+      <h1>Login</h1>
+      <form method="post"> {% csrf_token %}
+        <div class="form-group">
+          <label>Nome de Usuário:</label>
+          <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+          <label>Senha:</label>
+          <input type="password" class="form-control" name="password">  
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      
+     <div class="register">
+        Não é registrado?
+        <a href="/cadastrar">Cadastre-se</a>
+     </div>
+    </div>
   </div>
 {% endblock %}

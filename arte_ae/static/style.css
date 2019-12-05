@@ -222,7 +222,7 @@ footer {
 }
 
 /* cadastro */
-.container-cadastro {
+.container-lc {
   align-items: center; 
   display: flex; 
   flex-direction:column; 
@@ -231,42 +231,47 @@ footer {
   height: 100vh;
 }
 
-.container-cadastro .formulario-cadastro {
+.container-lc .formulario-lc {
   align-items: center;
   background-color: var(--cinza);
   display: flex; 
+  border-radius: 15px;
   flex-direction:column;  
   width: 35%;
   padding: 0px 0px 50px 0px;
-  border-radius: 15px;
+}
+.container-lc .formulario-lc .register {
+  margin-top: 50px;
 }
 
-.container-cadastro .formulario-cadastro form {
+.container-lc .formulario-lc form {
   align-items: flex-start;
   display: flex; 
   flex-direction:column;
   width: 100%;
 }
-.container-cadastro .formulario-cadastro form .form-group label {
+.container-lc .formulario-lc form .form-group label {
   font-size: 14pt;
+  width: 78%;
 }
-.container-cadastro .formulario-cadastro form .form-group {
+.container-lc .formulario-lc form .form-group {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 5px;
   width: 100%;
-  margin: 5px;  
 }
-.container-cadastro .formulario-cadastro form .form-control{
+.container-lc .formulario-lc form input{
   border: .5px solid var(--primaria);
   border-radius: 2px;
   height: 30px;
   width: 75%;
   padding: 0px 0px 0px 15px;
 }
-.container-cadastro .formulario-cadastro form .form-control:focus {
+.container-lc .formulario-lc form input:focus {
   border: .5px solid transparent;
 }
-.container-cadastro .formulario-cadastro form button{
+.container-lc .formulario-lc form button{
   color: var(--branco);
   border: none;
   border-radius: 2px;
@@ -276,7 +281,7 @@ footer {
   height: 30px;
   width: 150px;
 }
-.container-cadastro .formulario-cadastro form button:hover{
+.container-lc .formulario-lc form button:hover{
   background-color: var(--branco);
   color: var(--primaria);
   border: .5px solid var(--primaria);

@@ -1,41 +1,25 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arte ae | Cadastrar-se</title>
+{% extends 'base.html' %}
+{% block menu %}
+  <a href="/" class="item-menu">ir para página inicial</a>
+{% endblock %}
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <script src="{% static 'script.js'%}" defer></script>
-</head>
-<body>
-  <div class="container-cadastro">  
+{% block content %}
+<div class="container-lc">  
     {% if form %}
-      <div class="formulario-cadastro">
+      <div class="formulario-lc">
         <h1>Cadastrar-se</h1>
-        <form method="post"> {% csrf_token %}   
+        <form method="post"> {% csrf_token %}
           <div class="form-group">
             <label>Nome de usuário:</label>
             {{form.username}}
           </div>
           <div class="form-group">
-            <label>Nome:</label>
-            {{form.first_name}}
-          </div>
-          <div class="form-group">          
-            <label>Sobrenome:</label>
-            {{form.last_name}}
-          </div>
-          <div class="form-group">
-            <label>E-mail:</label>
-            {{form.email}}
-          </div>
-          <div class="form-group">
             <label>Senha:</label>
-            {{form.password}}
+            {{form.password1}}
+          </div>
+          <div class="form-group">
+            <label>Confirmar senha:</label>
+            {{form.password2}}
           </div>
           <button type="submit">Cadastrar</button>
         </form>
@@ -43,8 +27,10 @@
     {% endif %}
 
     {% if msg %}
-      <h1>{{msg}}</h1>
+      <div class="message">
+        <h1>{{msg}}</h1>
+        <a href="/login">Voltar para tela de login</a>
+      </div>
     {% endif %}
   </div>
-</body>
-</html>
+{% endblock %}
