@@ -1,5 +1,5 @@
 :root{
-  --primaria: #ff596a;
+  --primaria: #ff6e7d;
   --cinza: #eff1f7;
   --branco: #FFFFFF;
 }
@@ -139,6 +139,33 @@ main {
   width: 100%;
   align-items: center;
   margin-bottom: 20px;
+  
+}
+
+#search-text{
+  color: white; 
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  padding: 2px 2px;
+  
+}
+
+#text-botao{
+  border: none;
+  width: 400px;
+  height: 35px;
+  border-radius: 5px;
+
+}
+
+#botao{
+  background-color: white;
+  border: none;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
 }
 
 .content-card{
@@ -148,26 +175,33 @@ main {
   flex-flow: wrap row;
 }
 .content-card .card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
   width: 22%;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: var(--branco);
 }
 
 .content-card .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 30px 50px 0 rgba(0,0,0,0.5);
 }
 
 .content-card .card img{
   border-radius: 5px 5px 0 0;
   width: 100%;
-  height: 35%;
+  height: 49%;
 }
 
 .container-card {
-  padding: 2px 16px;
+  padding: 4px 2px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'mind ', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  padding: 2px 2px;
 }
 
 /* contact */
