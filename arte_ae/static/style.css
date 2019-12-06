@@ -142,11 +142,10 @@ main {
   
 }
 
-#search-text{
+.search label{
   color: white; 
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 20px;
+  font-size: 30pt;
+
   letter-spacing: 0.4px;
   padding: 2px 2px;
   
@@ -177,7 +176,7 @@ main {
 .content-card .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
-  width: 22%;
+  width: 30%;
   border-radius: 5px;
   margin-bottom: 40px;
   background-color: var(--branco);
@@ -185,6 +184,7 @@ main {
 
 .content-card .card:hover {
   box-shadow: 0 30px 50px 0 rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 
 .content-card .card img{
@@ -194,14 +194,21 @@ main {
 }
 
 .container-card {
-  padding: 4px 2px;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'mind ', sans-serif;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.4px;
   padding: 2px 2px;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 20px; */
+}
+
+.container-card h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.container-card ul{
+  list-style-type: none;
+  padding-left: 10px;
 }
 
 /* contact */
