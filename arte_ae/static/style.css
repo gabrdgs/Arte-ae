@@ -114,6 +114,7 @@ header {
 #about {
   grid-area: about;
   display: flex;
+  flex-direction: column;
   background-color: var(--branco);
   height: 100vh;
   padding: 100px 100px 0px 100px;
