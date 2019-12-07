@@ -43,7 +43,7 @@ nav .logo {
   align-items: center;  
   color: var(--branco);
   font-size: 16pt;
-  padding: 20px;
+  padding: 0 20px;
 }
 nav .logo img {
   width: 60px;
@@ -52,7 +52,7 @@ nav .logo img {
 nav .menu {
   height: 100%;
   display: flex;
-  padding: 20px;
+  padding: 0 20px;
 }
 nav .menu .item-menu{
   align-items: center;
@@ -60,7 +60,7 @@ nav .menu .item-menu{
   display: flex;
   height: 100%;
   margin-left: 20px;
-  padding: 5px;
+  padding: 0 5px;
 }
 nav .menu .item-menu:nth-child(5){
   margin-left: 50px;
