@@ -118,7 +118,7 @@ header {
   align-items: center;
   background-color: var(--branco);
   min-height: 100vh;
-  padding: 100px 100px 0px 100px;
+  padding: 5vw;
 }
 
 #about h2.item-header-text{
