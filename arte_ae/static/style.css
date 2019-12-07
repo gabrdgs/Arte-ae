@@ -119,6 +119,16 @@ header {
   padding: 100px 100px 0px 100px;
 }
 
+#about h2.item-header-text{
+  font-size: 40pt;
+  color: var(--primaria);
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 /* statistics */
 #statistics {
   grid-area: statistics;
