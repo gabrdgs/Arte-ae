@@ -1,5 +1,6 @@
 :root{
   --primaria: #ff6161;
+  --primaria-dark: #a82424;
   --cinza: #eff1f7;
   --branco: #FFFFFF;
 }
@@ -267,11 +268,12 @@ footer {
   justify-content: center; 
   background-color: var(--primaria);
   height: 100vh;
+  color: var(--primaria-dark);
 }
 
 .container-lc .formulario-lc {
   align-items: center;
-  background-color: var(--cinza);
+  background-color: var(--branco);
   display: flex; 
   border-radius: 15px;
   flex-direction:column;  
