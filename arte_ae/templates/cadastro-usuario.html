@@ -9,15 +9,15 @@
       <div class="formulario-lc">
         <h1>Cadastrar-se</h1>
         <form method="post"> {% csrf_token %}
-          <div class="form-group">
+          <div class="my-form-group my-align-item">
             <label>Nome de usuário:</label>
             {{form.username}}
           </div>
-          <div class="form-group">
+          <div class="my-form-group my-align-item">
             <label>Senha:</label>
             {{form.password1}}
           </div>
-          <div class="form-group">
+          <div class="my-form-group my-align-item">
             <label>Confirmar senha:</label>
             {{form.password2}}
           </div>
