@@ -319,28 +319,27 @@ footer span{
   flex-direction:column;
   width: 100%;
 }
-.container-lc .formulario-lc form .form-group label {
+.formulario-lc form .my-form-group label {
   font-size: 14pt;
-  width: 78%;
+  width: 75%;
 }
-.container-lc .formulario-lc form .form-group {
+.formulario-lc form .my-form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 5px;
   width: 100%;
 }
-.container-lc .formulario-lc form input{
+.formulario-lc form input{
   border: .5px solid var(--primaria);
   border-radius: 2px;
   height: 30px;
   width: 75%;
   padding: 0px 0px 0px 15px;
 }
-.container-lc .formulario-lc form input:focus {
+.formulario-lc form input:focus {
   border: .5px solid transparent;
 }
-.container-lc .formulario-lc form button{
+.formulario-lc form button{
   color: var(--branco);
   border: none;
   border-radius: 2px;
@@ -350,10 +349,12 @@ footer span{
   height: 30px;
   width: 150px;
 }
-.container-lc .formulario-lc form button:hover{
+.formulario-lc form button:hover{
   background-color: var(--branco);
   color: var(--primaria);
   border: .5px solid var(--primaria);
   cursor: pointer;
 }
-
+.my-align-item {
+  align-items: center;
+}
