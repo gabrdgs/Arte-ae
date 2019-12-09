@@ -248,16 +248,43 @@ main {
   grid-area: contact;
   display: flex;
   background-color: var(--branco);
-  height: 100vh;
-  padding: 100px 100px 0px 100px;
+  padding: 100px 100px 100px 100px;
+}
+
+#contact h2.item-header-text{
+  font-size: 35pt;
+  color: var(--primaria);
+  width: 100%;
+  text-align: left;
 }
 
 footer {
   grid-area: footer;
-  display: flex;
-  height: 30px;
+  display: flex;  
   padding: 25px;
   background-color: var(--primaria) ;
+}
+
+footer h3 {
+  color: var(--branco);
+}
+
+.equipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+footer span{
+  font-size: 11pt;
+  text-align: center;
+  color: var(--branco);
 }
 
 /* cadastro */

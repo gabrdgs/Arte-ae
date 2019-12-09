@@ -100,10 +100,64 @@
 </main>
 
 <section id="contact">
-  CONTACT
+  <div class="container">
+    <h2 class="item-header-text">Entre em contato com a gente!</h2>
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="email" class="form-control" id="nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Digite a sua mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
 </section>
 
 <footer>
-  FOOTER
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <h3>Equipe</h3>
+      </div>
+      <div class="col-2 equipe">
+        <img src="../static/images/hernani-moretti.jpg"><br />
+        <span>Hernani Moretti
+          <br />Desenvolvedor Jr.</span>
+        </div>
+        
+      <div class="col-2 equipe">
+        <img src="../static/images/danilo-macedo.jpg"><br />
+        <span>Danilo Macedo
+          <br />Desenvolvedor Jr.</span>              
+        </div>
+          
+      <div class="col-2 equipe">
+        <img src="../static/images/daniela-lopes.jpg"><br />
+        <span>Daniela Lopes
+          <br />Desenvolvedora Jr.</span>              
+      </div>          
+            
+      <div class="col-2 equipe">
+        <img src="../static/images/gabriela-rodrigues.jpg"><br />
+        <span>Gabriela Rodrigues
+          <br />Desenvolvedora Jr.</span>              
+      </div>
+              
+      <div class="col-2 equipe">
+        <img src="../static/images/mauricio-dantas.jpg"><br />
+        <span>Maurício Dantas
+          <br />Desenvolvedor Jr.</span>              
+      </div>
+    </div>
+  </div>
 </footer>
 {% endblock %}
