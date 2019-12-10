@@ -26,7 +26,8 @@ urlpatterns = [
     path('logout/', views.do_logout),
     path('cadastrar/', views.cadastro_usuario),
     path('painel/', views.painel_de_controle),
-    path('painel/cadastrar-evento', views.cadastro_evento)
+    path('painel/cadastrar-evento', views.cadastro_evento),
+    path('painel/evento/<id>', views.get_evento)
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
