@@ -5,6 +5,9 @@ from django.contrib.auth.forms import UserCreationForm
 from arte_ae.forms import EventoForm
 from arte_ae.models import *
 
+from django.http import JsonResponse
+from django.core import serializers
+
 # Create your views here.
 @login_required
 def painel_de_controle(request):
