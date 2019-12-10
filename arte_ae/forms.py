@@ -14,9 +14,11 @@ class EventoForm(forms.ModelForm):
             'numero',
             'imagem',
             'nome',
-            'dataHora'
+            'data',
+            'horario'
         ]
 
         widgets = {
-            'dataHora': forms.DateTimeInput(attrs={'type': 'date'})
+            'data': forms.DateInput(attrs={'type': 'date'}),
+            'horario': forms.DateInput(attrs={'type': 'time'})
         }
