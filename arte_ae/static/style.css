@@ -152,10 +152,21 @@ header {
   grid-area: statistics;
   display: flex;
   background-color:var(--primaria);
-  height: 100vh;
-  padding: 100px 100px 0px 100px;
+  height: 150vh;
+  padding: 50px 100px 0px 340px;
 }
-
+.dados{
+  display:flex;
+  flex-direction: column;
+}
+.superior{
+  width: 900px;
+  height: 500px;
+}
+.inferior{
+  width: 900px;
+  height: 500px;
+}
 /* main */
 main {
   grid-area: main;
