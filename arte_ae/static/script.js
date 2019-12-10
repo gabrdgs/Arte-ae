@@ -7,6 +7,7 @@ let logradouro = document.querySelector("#id_logradouro");
 let bairro = document.querySelector("#id_bairro");
 let estado = document.querySelector("#id_localidade");
 let uf = document.querySelector("#id_uf");
+let modal = document.querySelector("#modal")
 
 function checkPosition() {
     if (window.matchMedia('(max-width: 768px)').matches) {
@@ -61,4 +62,57 @@ cep.addEventListener('blur', function(e) {
   true
 )
 
+function getEvento(id) {
+  var URL = `/painel/evento/${id}`;
+  var req = new XMLHttpRequest()
+  req.open("GET", URL)
+  req.responseType = "json"
+  req.send()
+
+  req.onload = function() {
+    openModal(JSON.parse(req.response))
+  }
+}
+function bodyModal(res) {
+  let contentModal = ""
+  console.log(res)
+  document.querySelector("#shadow__modal").style.display = "block" 
+  contentModal = `
+    <div class="modal__container">
+      <div class="modal__header">
+      <div class="modal__close">
+        <span onclick="closeModal()">X</span>
+        <img src="../../media/${res.imagem}" width="500" heigth="100">
+      </div>
+      </div>
+      <div class="modal__body">
+        <div class="modal__title">
+          <h2>${res.nome}</h2>
+        </div>
+        <div class="modal__more__information">
+          <div class="modal__item">
+            Local: ${res.logradouro}, ${res.numero} -
+            ${res.bairro} - ${res.localidade} - ${res.uf}
+          </div>
+          <div class="modal__item">
+            Data do evento: ${res.data}
+          </div>
+          <div class="modal__item">
+            Horário do evento: ${res.horario}
+          </div>
+        </div>
+      </div>
+    </div>`
+  return contentModal
+}
+
+function openModal(res) {
+  modal.style.display = 'flex'
+  window.scrollTo(0,0)
+  modal.innerHTML = bodyModal(res[0].fields)
+}
+function closeModal() {
+  modal.innerHTML = ""
+  document.querySelector("#shadow__modal").style.display = "none" 
+}
 botaoNavMobile.onclick = toggleMenu;
