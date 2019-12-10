@@ -11,6 +11,11 @@
   <div class="container-control">
     <section class="my-event">
       <label class="title-event">Meus eventos</label>
+      <div id="modal">        
+        <div class="modal__close">
+          <span onclick="closeModal()">X</span>
+        </div>
+      </div>
       <section class="add-event">
         <a href="/painel/cadastrar-evento">
           <button type="button" class="add-evento">Adicionar evento</button>
@@ -20,6 +25,7 @@
             <th>Nome do evento</th>
             <th>Local</th>
             <th>Data e hora</th>
+            <th>Ação</th>
           </tr>
           {% for evento in eventos %}
           <tr>
@@ -27,6 +33,9 @@
             <td>{{evento.logradouro}}, {{evento.numero}} -
               {{evento.bairro}} - {{evento.localidade}} - {{evento.uf}}</td>
             <td>{{evento.data}} ás {{evento.horario}}</td>
+            <td>
+              <button onclick="getEvento('{{evento.id}}')">Ver evento</button>
+            </td>
           </tr>
           {% endfor %}
         </table>
