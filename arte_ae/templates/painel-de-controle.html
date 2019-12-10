@@ -4,7 +4,56 @@
   <a href="/logout/" class="item-menu">logout</a>
 {% endblock %}
 {% block content %}
-  <div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+  <div class="daddy">
     <h1>Painel de Controle</h1>
+    <div class="container-control">
+      <section class="my-event">
+        <label class="title-event">Meus eventos</label>
+        
+      </section>
+      <section class="add-event">
+        <label class="title-event">Adicionar eventos</label>
+        <div class="formulario-lc">
+          <form method="post">{% csrf_token %}
+            <div class="my-form-group">
+              {{form}}
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <style>
+      .daddy {
+        height: 100vh;
+        width: 100%;
+      }
+      .daddy h1 {        
+        padding: 80px 0px 0px 80px;
+      }
+      .container-control {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .container-control .my-event {
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 30px 10px 30px;
+        margin: 15px;
+        width: 100%;
+        height: 60vh;
+      }
+      .container-control .add-event {
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+      .container-control .my-event .title-event, .container-control .add-event .title-event {
+        font-size: 17pt;
+      }
+    </style>
   </div>
 {% endblock %}
