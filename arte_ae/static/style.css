@@ -28,6 +28,7 @@ a {
   text-decoration: none;
 }
 /* navbar */
+
 nav {
   align-items: center;
   background-color: var(--primaria);
@@ -357,3 +358,33 @@ footer span{
   cursor: pointer;
 }
 
+.toggle-menu{
+  display: none;
+}
+
+@media only screen and (max-width:768px){
+  nav{
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+    height: auto;
+  }
+  nav .menu{
+    display: none;
+  }
+  nav.mobile-toggle .menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  nav.mobile-toggle .menu .item-menu{
+    justify-content:center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .toggle-menu{
+    display: flex;
+    cursor:pointer;
+  }
+}
