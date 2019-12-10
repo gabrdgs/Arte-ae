@@ -8,18 +8,12 @@
     <h1>Painel de Controle</h1>
     <div class="container-control">
       <section class="my-event">
-        <label class="title-event">Meus eventos</label>
-        
-      </section>
-      <section class="add-event">
-        <label class="title-event">Adicionar eventos</label>
-        <div class="formulario-lc">
-          <form method="post">{% csrf_token %}
-            <div class="my-form-group">
-              {{form}}
-            </div>
-          </form>
-        </div>
+        <label class="title-event">Meus eventos</label>        
+        <section class="add-event">
+          <a href="/painel/cadastrar-evento">
+            <button type="button">Adicionar evento</button>
+          </a>
+        </section>
       </section>
     </div>
     <style>
@@ -43,16 +37,6 @@
         margin: 15px;
         width: 100%;
         height: 60vh;
-      }
-      .container-control .add-event {
-        background-color: #f7f7f7;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-      }
-      .container-control .my-event .title-event, .container-control .add-event .title-event {
-        font-size: 17pt;
       }
     </style>
   </div>
