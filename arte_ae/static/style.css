@@ -114,7 +114,10 @@ header {
   width: 50%;
   /* background-image: ; */
 }
-
+/* statistics */
+.dados{
+  width: 500px;
+}
 /* about */
 #about {
   grid-area: about;
