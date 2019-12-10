@@ -18,6 +18,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.urls import path
 from arte_ae import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
@@ -25,4 +26,7 @@ urlpatterns = [
     path('logout/', views.do_logout),
     path('cadastrar/', views.cadastro_usuario),
     path('painel/', views.painel_de_controle),
-]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('painel/cadastrar-evento', views.cadastro_evento)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
