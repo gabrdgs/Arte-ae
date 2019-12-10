@@ -46,7 +46,7 @@ nav .logo {
   display: flex;
   align-items: center;  
   color: var(--branco);
-  font-size: 16pt;
+  font-size: 30pt;
   padding: 0 20px;
 }
 nav .logo img {
