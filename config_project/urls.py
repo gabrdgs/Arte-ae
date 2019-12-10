@@ -14,6 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 from django.urls import path
 from arte_ae import views
 urlpatterns = [
@@ -23,4 +25,4 @@ urlpatterns = [
     path('logout/', views.do_logout),
     path('cadastrar/', views.cadastro_usuario),
     path('painel/', views.painel_de_controle),
-]
+]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
