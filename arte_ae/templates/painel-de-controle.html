@@ -1,43 +1,37 @@
 {% extends 'base.html' %}
 {% block menu %}
-  <a href="/" class="item-menu">ir para página inicial</a>
-  <a href="/logout/" class="item-menu">logout</a>
+<div class="item-menu">
+  Olá, {{user}}
+</div>
+<a href="/logout/" class="item-menu">logout</a>
 {% endblock %}
 {% block content %}
-  <div class="daddy">
-    <h1>Painel de Controle</h1>
-    <div class="container-control">
-      <section class="my-event">
-        <label class="title-event">Meus eventos</label>        
-        <section class="add-event">
-          <a href="/painel/cadastrar-evento">
-            <button type="button">Adicionar evento</button>
-          </a>
-        </section>
+<div class="daddy">
+  <h1>Painel de Controle</h1>
+  <div class="container-control">
+    <section class="my-event">
+      <label class="title-event">Meus eventos</label>
+      <section class="add-event">
+        <a href="/painel/cadastrar-evento">
+          <button type="button" class="add-evento">Adicionar evento</button>
+        </a>
+        <table>
+          <tr>
+            <th>Nome do evento</th>
+            <th>Local</th>
+            <th>Data e hora</th>
+          </tr>
+          {% for evento in eventos %}
+          <tr>
+            <td>{{evento.nome}}</td>
+            <td>{{evento.logradouro}}, {{evento.numero}} -
+              {{evento.bairro}} - {{evento.localidade}} - {{evento.uf}}</td>
+            <td>{{evento.data}} ás {{evento.horario}}</td>
+          </tr>
+          {% endfor %}
+        </table>
       </section>
-    </div>
-    <style>
-      .daddy {
-        height: 100vh;
-        width: 100%;
-      }
-      .daddy h1 {        
-        padding: 80px 0px 0px 80px;
-      }
-      .container-control {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-      }
-      .container-control .my-event {
-        background-color: #f7f7f7;
-        display: flex;
-        flex-direction: column;
-        padding: 15px 30px 10px 30px;
-        margin: 15px;
-        width: 100%;
-        height: 60vh;
-      }
-    </style>
+    </section>
   </div>
+</div>
 {% endblock %}
