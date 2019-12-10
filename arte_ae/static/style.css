@@ -153,7 +153,7 @@ header {
   display: flex;
   background-color:var(--primaria);
   height: 150vh;
-  padding: 50px 100px 0px 100px;
+  padding: 50px 100px 0px 340px;
 }
 .dados{
   display:flex;
