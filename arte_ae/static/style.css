@@ -406,12 +406,54 @@ footer span{
   padding: 80px 0px 0px 80px;
 }
 .container-control {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
+.container-control .my-event {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px 10px 30px;
+  margin: 0px 15px 0px 15px;
+  width: 100%;
+}
+.container-control .my-event label {
+  font-size: 20pt;
+}
+.container-control .my-event table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container-control .my-event table td, th {
+  border: 1px solid var(--primaria-dark);
+  text-align: left;
+  padding: 8px;
+}
+.container-control .my-event tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.container-control .my-event tr:nth-child(even) {
+  background-color: var(--primaria);
+  color: var(--branco);
+}
+.add-event button {
+  color: var(--primaria);
+  border: 1px solid var(--primaria);
+  border-radius: 2px;
+  background-color: var(--branco);
+  margin: 0px 48px 0px 0px;
+  align-self: flex-end;
+  height: 30px;
+  width: 150px;
+}
+.add-event button:hover {
+  background-color: var(--primaria);
+  cursor: pointer;
+  color: var(--branco);
+}
+
 .toggle-menu{
   display: none;
 }
