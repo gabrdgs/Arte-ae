@@ -7,17 +7,22 @@ from arte_ae.forms import EventoForm
 # Create your views here.
 @login_required
 def painel_de_controle(request):
-  form = EventoForm(request.POST or None)
+  return render(request, 'painel-de-controle.html')
+
+@login_required
+def cadastro_evento(request):
+  form = EventoForm(request.POST, request.FILES)
   if form.is_valid():
+    form.instance.user = request.user
     form.save()
     context = {
       'msg': 'Evento cadastrado com sucesso'
     }
-    return render(request, 'painel-de-controle.html', context)
+    return render(request, 'cadastro-evento.html', context)
   context = {
     'form': form
   }
-  return render(request, 'painel-de-controle.html', context)
+  return render(request, 'cadastro-evento.html', context)
 
 def index(request):
   return render(request, 'index.html')
