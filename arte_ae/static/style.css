@@ -114,10 +114,7 @@ header {
   width: 50%;
   /* background-image: ; */
 }
-/* statistics */
-.dados{
-  width: 500px;
-}
+
 /* about */
 #about {
   grid-area: about;
@@ -155,8 +152,11 @@ header {
   grid-area: statistics;
   display: flex;
   background-color:var(--primaria);
-  height: 100vh;
+  height: 150vh;
   padding: 100px 100px 0px 100px;
+}
+.dados{
+  width: 500px;
 }
 
 /* main */
