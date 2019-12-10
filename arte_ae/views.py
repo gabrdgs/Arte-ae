@@ -12,7 +12,6 @@ from django.core import serializers
 @login_required
 def painel_de_controle(request):
   eventos = Evento.objects.filter(user=request.user)
-  print(request.user)
   context = {
     'user': request.user,
     'eventos': eventos
@@ -33,6 +32,11 @@ def cadastro_evento(request):
     'form': form
   }
   return render(request, 'cadastro-evento.html', context)
+
+def get_evento(request, id):
+  evento = Evento.objects.filter(id=id)
+  evento_serialized = serializers.serialize('json', evento)
+  return JsonResponse(evento_serialized, safe=False)
 
 def index(request):
   return render(request, 'index.html')
