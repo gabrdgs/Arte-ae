@@ -324,7 +324,7 @@ footer span{
   color: var(--primaria-dark);
 }
 
-.container-lc .formulario-lc {
+.formulario-lc {
   align-items: center;
   background-color: var(--branco);
   display: flex; 
@@ -333,25 +333,30 @@ footer span{
   width: 35%;
   padding: 0px 0px 50px 0px;
 }
-.container-lc .formulario-lc .register {
+.formulario-lc .register {
   margin-top: 50px;
 }
 
-.container-lc .formulario-lc form {
+.formulario-lc form {
   align-items: flex-start;
   display: flex; 
   flex-direction:column;
+  width: 100%;
+}
+.formulario-lc form .my-form-group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
   width: 100%;
 }
 .formulario-lc form .my-form-group label {
   font-size: 14pt;
   width: 75%;
 }
-.formulario-lc form .my-form-group {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  width: 100%;
+.formulario-lc form .my-form-group p {
+  font-size: 10pt;
+  width: 75%;
 }
 .formulario-lc form input{
   border: .5px solid var(--primaria);
@@ -410,6 +415,4 @@ footer span{
     cursor:pointer;
   }
 }
-.my-align-item {
-  align-items: center;
-}
+
