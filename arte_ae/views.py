@@ -3,11 +3,18 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from arte_ae.forms import EventoForm
+from arte_ae.models import *
 
 # Create your views here.
 @login_required
 def painel_de_controle(request):
-  return render(request, 'painel-de-controle.html')
+  eventos = Evento.objects.filter(user=request.user)
+  print(request.user)
+  context = {
+    'user': request.user,
+    'eventos': eventos
+  }
+  return render(request, 'painel-de-controle.html', context)
 
 @login_required
 def cadastro_evento(request):
