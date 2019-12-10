@@ -153,12 +153,20 @@ header {
   display: flex;
   background-color:var(--primaria);
   height: 150vh;
-  padding: 100px 100px 0px 100px;
+  padding: 50px 100px 0px 100px;
 }
 .dados{
-  width: 500px;
+  display:flex;
+  flex-direction: column;
 }
-
+.superior{
+  width: 900px;
+  height: 500px;
+}
+.inferior{
+  width: 900px;
+  height: 500px;
+}
 /* main */
 main {
   grid-area: main;
