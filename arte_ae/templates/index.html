@@ -1,21 +1,22 @@
 {% extends 'base.html' %}
 {% block menu %}
-<a href="#home" class="item-menu">home</a>
-<a href="#statistics" class="item-menu">estatísticas</a>
-<a href="#about" class="item-menu">sobre</a>
-<a href="#main" class="item-menu">eventos</a>
-<a href="#contact" class="item-menu">contato</a>
-<a href="/login" class="item-menu">login</a>
+<a href="#home" class="item-menu">Home</a>
+<a href="#statistics" class="item-menu">Estatísticas</a>
+<a href="#about" class="item-menu">Sobre</a>
+<a href="#main" class="item-menu">Eventos</a>
+<a href="#contact" class="item-menu">Contato</a>
+<a href="/login" class="item-menu">Login</a>
 {% endblock %}
 {% block content %}
 <header id="home">
   <section class="content-header">
     <div class="item-header-text">
       <h1>Sinest</h1>
-      <h2>Encontre seu evento na palma da sua mão.</h2>
+      <h2>Encontre o evento acessível para você, na palma da sua mão</h2>
     </div>
   </section>
 </header>
+
 <section id="about">
   <h2 class="item-header-text">Nossa proposta</h2>
   <p class="description">
@@ -23,18 +24,20 @@
     dificuldade por deficiência possa participar de eventos que contenham a acessibilidade adequada.
   </p>
   <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AccessibilityMeetup4_GIF.gif"
-    alt="Um cadeirante, um idoso com o andador, uma mãe andando com suas duas filhas que estão correndo em volta dela enquanto ela anda com o carrinho do bebê">
+  alt="Um cadeirante, um idoso com o andador, uma mãe andando com suas duas filhas que estão correndo em volta dela enquanto ela anda com o carrinho do bebê">
 </section>
+
 <section id="statistics">
   <div class="images">
     <img class="img-statics" src="../static/images/superior.png"
-      alt="Infografico sobre Deficientes no Brasil, parte superior contendo: porcentagem de brasileiros deficientes e informções sobre Libras">
+    alt="Infográfico sobre deficientes no Brasil, na parte superior contém: porcentagem de brasileiros deficientes e informações sobre LIBRAS">
   </div>
   <div class="images">
     <img class="img-statics" src="../static/images/inferior.png"
-      alt="Parte inferior do infografico, contendo: Dados sobre cada tipo de deficiencia e grau por pessoa, e continuação de informações sobre libras">
+    alt="Parte inferior do infográfico, contém: Dados sobre cada tipo de deficiência e grau por pessoa, continuação das informações sobre LIBRAS">
   </div>
 </section>
+
 <main id="main">
 
   <div class="search" id="search-text">
@@ -46,200 +49,194 @@
       </form>
     </div>
   </div>
-
+  
   <div class="content-card">
-
+    
     <div class="card">
       <img src="https://www.baressp.com.br/bares/fotos2/sesc-pinheiros-1.jpg" alt="Avatar">
       <div class="container-card">
-        <h4> Sesc Pinheiros</h4>
+        <h4>Sesc Pinheiros</h4>
         <ul>
           <li class="lista-card">Local:   R. Pais Leme, 195 - Pinheiros, São Paulo - SP, 05424-150</li>
           <li class="lista-card">Horário:  10:00 ás 22:00</li>
           <li class="lista-card">Data: 20/12/2019</li>
           <li class="lista-card">Contato: (11) 3095-9400  </li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="https://www.sescsp.org.br/unidades/10_PINHEIROS/#/uaba=programacao#/fdata=id%3D10">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum" >Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-
+    
     <div class="card">
       <img src="https://www.tvgazeta.com.br/wp-content/uploads/2019/05/masp-predio.jpg" alt="Avatar">
       <div class="container-card">
-        <h4> MASP</h4>
+        <h4>MASP</h4>
         <ul>
           <li class="lista-card">Local: Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</li>
           <li class="lista-card">Horário: 10:00  ás 18:00</li>
           <li class="lista-card">Data: 05/01/2020 </li>
           <li class="lista-card">Contato: masp.org.br</li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="https://masp.org.br/">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum">Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-
+    
     <div class="card">
       <img src="https://www.prefeitura.sp.gov.br/cidade/upload/BMA/CIRC.jpg" alt="Avatar">
       <div class="container-card">
-        <h4> Biblioteca Mario da Andrade</h4>
+        <h4>Biblioteca Mario da Andrade</h4>
         <ul>
           <li class="lista-card">Local: R. da Consolação, 94 - República, São Paulo - SP, 01302-000  </li>
           <li class="lista-card">Horário: 08:00 ás 21:45</li>
           <li class="lista-card">Data: Ano inteiro de 2020 </li>
           <li class="lista-card">Contato: (11) 3775-0002  </li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/bma/">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum">Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-
+    
     <div class="card">
       <img src="https://ims.com.br/wp-content/uploads/2017/12/IMS-20170922_IMS_Paulista_746_1920x1080_Pedro.jpg" alt="Avatar">
       <div class="container-card">
-        <h4> IMS Paulista</h4>
+        <h4>IMS Paulista</h4>
         <ul>
           <li class="lista-card">Local:  Av. Paulista, 2424 - Consolação, São Paulo - SP, 01310-300 </li>
           <li class="lista-card">Horário: 10:00  ás 20:00</li>
           <li class="lista-card">Data: Exposição até 16/02/2019</li>
           <li class="lista-card">Contato:  (11) 2842-9120  e ims.com.br </li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="https://ims.com.br/unidade/sao-paulo/">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum">Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-
+    
     <div class="card">
       <img src="http://www.museuafrobrasil.org.br/images/default-source/noticias/imagem-externa---museu-afro-brasil.jpg?sfvrsn=0" alt="Avatar">
       <div class="container-card">
-        <h4> Museu Afro Brasil</h4>
+        <h4>Museu Afro Brasil</h4>
         <ul>
           <li class="lista-card">Local:  Portão 10, Av. Pedro Álvares Cabral, s/n, São Paulo - SP, 04094-050 </li>
           <li class="lista-card">Horário: 10:00 ás 17:00</li>
           <li class="lista-card">Data: O Ano Todo</li>
           <li class="lista-card">Contato: 11 3320 8900</li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="http://www.museuafrobrasil.org.br/programacao-cultural/acoes-educativas">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum">Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-
+    
     <div class="card">
       <img src="https://checkinsaopaulo.com/wp-content/uploads/2016/05/Capa2.jpg" alt="Avatar">
       <div class="container-card">
-        <h4> Pinacoteca </h4>
+        <h4>Pinacoteca</h4>
         <ul>
           <li class="lista-card">Local: Praça da Luz, 2 - Luz, São Paulo - SP, 01120-010 </li>
           <li class="lista-card">Horário: 10:00 ás 17:30</li>
           <li class="lista-card">Data: O Ano todo  </li>
           <li class="lista-card">Contato: (11) 3324-1000 </li>
         </ul>
-
+        
         <div class="btn-saiba">
           <a href="http://museu.pinacoteca.org.br/programas-desenvolvidos/">
-            <button class="botaum" > Saiba Mais </button>
+            <button class="botaum">Saiba Mais</button>
           </a>
         </div>
-
-
+        
       </div>
     </div>
-</main>
-
-<section id="contact">
-  <div class="container">
-    <h2 class="item-header-text">Entre em contato com a gente!</h2>
-  </div>
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="email" class="form-control" id="nome">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email">
-      </div>
-      <div class="form-group">
-        <label for="mensagem">Digite a sua mensagem</label>
-        <textarea class="form-control" id="mensagem" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 col-md-4 col-sm-12">
-        <h3>Equipe</h3>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-12 equipe">
-        <img src="../static/images/hernani-moretti.jpg">
-        <span>Hernani Moretti
+  </main>
+  
+  <section id="contact">
+    <div class="container">
+      <h2 class="item-header-text">Entre em contato com a gente!</h2>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="email" class="form-control" id="nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Digite a sua mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12">
+          <h3>Equipe</h3>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 equipe">
+          <img src="../static/images/hernani-moretti.jpg">
+          <span>Hernani Moretti
           <br />Desenvolvedor Jr.</span>
           <a href="https://www.linkedin.com/in/hernani-m-a42955125/"><img class="icone" src="../static/images/linkedin.png" /></a>
         </div>
-        
-      <div class="col-lg-2 col-md-4 col-sm-12 equipe">
-        <img src="../static/images/danilo-macedo.jpg">
-        <span>Danilo Macedo
-          <br />Desenvolvedor Jr.</span>
-          <a href="https://www.linkedin.com/in/danilo-macedo-quintino-762679173/"><img class="icone" src="../static/images/linkedin.png" /></a>              
-        </div>
           
-      <div class="col-lg-2 col-md-4 col-sm-12 equipe">
-        <img src="../static/images/daniela-lopes.jpg">
-        <span>Daniela Lopes
-          <br />Desenvolvedora Jr.</span>
-          <a href="https://www.linkedin.com/in/danielablopess"><img class="icone" src="../static/images/linkedin.png" /></a>            
-      </div>          
+        <div class="col-lg-2 col-md-4 col-sm-12 equipe">
+            <img src="../static/images/danilo-macedo.jpg">
+            <span>Danilo Macedo
+            <br />Desenvolvedor Jr.</span>
+            <a href="https://www.linkedin.com/in/danilo-macedo-quintino-762679173/"><img class="icone" src="../static/images/linkedin.png" /></a>              
+        </div>
             
-      <div class="col-lg-2 col-md-4 col-sm-12 equipe">
-        <img src="../static/images/gabriela-rodrigues.jpg">
-        <span>Gabriela Rodrigues
-          <br />Desenvolvedora Jr.</span>
-          <a href="https://www.linkedin.com/in/gabriela-rodrigues-matias"><img class="icone" src="../static/images/linkedin.png" /></a>  
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-12 equipe">
-        <img src="../static/images/mauricio-dantas.jpg">
-        <span>Maurício Dantas
-          <br />Desenvolvedor Jr.</span>
+        <div class="col-lg-2 col-md-4 col-sm-12 equipe">
+              <img src="../static/images/daniela-lopes.jpg">
+              <span>Daniela Lopes
+              <br />Desenvolvedora Jr.</span>
+              <a href="https://www.linkedin.com/in/danielablopess"><img class="icone" src="../static/images/linkedin.png" /></a>            
+        </div>          
+              
+        <div class="col-lg-2 col-md-4 col-sm-12 equipe">
+            <img src="../static/images/gabriela-rodrigues.jpg">
+            <span>Gabriela Rodrigues
+            <br />Desenvolvedora Jr.</span>
+            <a href="https://www.linkedin.com/in/gabriela-rodrigues-matias"><img class="icone" src="../static/images/linkedin.png" /></a>  
+        </div>
+                
+        <div class="col-lg-2 col-md-4 col-sm-12 equipe">
+          <img src="../static/images/mauricio-dantas.jpg">
+          <span>Maurício Dantas
+            <br />Desenvolvedor Jr.</span>
           <a href="https://www.linkedin.com/in/maur%C3%ADcio-correia-dantas-491a62170/"><img class="icone" src="../static/images/linkedin.png" /></a>     
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 {% endblock %}
