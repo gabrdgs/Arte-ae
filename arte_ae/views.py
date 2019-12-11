@@ -39,7 +39,11 @@ def get_evento(request, id):
   return JsonResponse(evento_serialized, safe=False)
 
 def index(request):
-  return render(request, 'index.html')
+  eventos = Evento.objects.all()
+  context = {
+    'eventos': eventos
+  }
+  return render(request, 'index.html', context)
 
 def do_login(request):
   if request.method == 'POST':
