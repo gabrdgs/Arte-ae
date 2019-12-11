@@ -1,1 +1,1 @@
-web: gunicorn Sinest.wsgi
+web: gunicorn config_project.wsgi
