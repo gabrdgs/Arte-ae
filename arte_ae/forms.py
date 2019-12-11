@@ -15,7 +15,8 @@ class EventoForm(forms.ModelForm):
             'imagem',
             'nome',
             'data',
-            'horario'
+            'horario',
+            'descricao'
         ]
 
         widgets = {

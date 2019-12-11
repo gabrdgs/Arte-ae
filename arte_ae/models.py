@@ -13,6 +13,7 @@ class Evento(models.Model):
     data = models.DateField()
     horario = models.TimeField()
     imagem = models.ImageField()
+    descricao = models.TextField()
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
     def __str__(self):
