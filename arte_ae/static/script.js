@@ -24,8 +24,9 @@ window.onload = checkPosition();
 
 function toggleMenu(){
     nav.classList.toggle("mobile-toggle")
-}
-
+  }
+  
+botaoNavMobile.onclick = toggleMenu;
 // Limpa valores do formulário de cep.
 function limpa_formulário_cep() {
     cep.value = ''
@@ -115,4 +116,3 @@ function closeModal() {
   modal.innerHTML = ""
   document.querySelector("#shadow__modal").style.display = "none" 
 }
-botaoNavMobile.onclick = toggleMenu;
