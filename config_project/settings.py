@@ -126,4 +126,4 @@ MEDIA_URL = 'media/'
 
 LOGIN_URL = '/login'
 
-django_heroku.settings(locals())
+'django_heroku.settings(locals())'
