@@ -39,14 +39,8 @@
 </section>
 
 <main id="main">
-
   <div class="search" id="search-text">
-    <label for="">Encontre seu evento</label>
-  </div>
-  <div id="modal">        
-    <div class="modal__close">
-      <span onclick="closeModal()">X</span>
-    </div>
+    <label>Encontre seu evento</label>
   </div>
   <div class="content-card">
     <ul class="cards">
@@ -58,8 +52,17 @@
             </div>
             <div class="card_content">
               <h2 class="card_title">{{evento.nome}}</h2>
-              <p class="card_text">{{evento.descricao}}</p>
-              <button class="btn_my card_btn" onclick="getEvento('{{evento.id}}')">VER MAIS</button>
+              <div class="card_text">
+                <p>
+                  <b>Local:</b> {{evento.logradouro}}, {{evento.numero}} -
+                  {{evento.bairro}} - {{evento.localidade}} - {{evento.uf}}, CEP {{evento.cep}}</p>
+                <p>
+                  <b>Data e Hora:</b> 
+                  {{evento.data}} ás {{evento.horario}}</p>
+                <p>
+                  <b>Descrição:</b>
+                   {{evento.descricao}}</p>
+              </div>
             </div>
           </div>
         </li>
