@@ -166,7 +166,7 @@ header {
 }
 .img-statics{
   width: 900px;
-  height: 500px;
+  height: auto;
   max-width: 100%;
 }
 /* main */
