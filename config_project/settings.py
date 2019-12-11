@@ -26,7 +26,7 @@ SECRET_KEY = 't^6p@=39(y%rke=bqv%t!xd+9!&(&4)=%66k6fp0qv#0akf@fp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','sinest.herokuapp.com']
 
 
 # Application definition
