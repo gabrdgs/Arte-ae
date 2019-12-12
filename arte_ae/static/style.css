@@ -332,7 +332,11 @@ footer span{
   padding: 0px 0px 50px 0px;
 }
 .formulario-lc .register {
-  margin-top: 50px;
+  margin-top: 1em;
+}
+
+.formulario-lc h1{
+  margin: 1rem 0;
 }
 
 .formulario-lc form {
@@ -381,8 +385,8 @@ footer span{
   border: none;
   border-radius: 2px;
   background-color: var(--primaria);
-  margin: 0px 48px 0px 0px;
-  align-self: flex-end;
+  margin: 1em 0;
+  align-self: center;
   height: 30px;
   width: 150px;
 }
