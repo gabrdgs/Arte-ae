@@ -610,6 +610,21 @@ footer span{
   .equipe{
     margin: 1em 0;
   }
+
+  .formulario-lc{
+    width:95vw;
+    padding: 1em 0;
+  }
+
+  .formulario-lc form button {
+    margin: 1em 0;
+    align-self: center;
+  }
+
+  .formulario-lc .register{
+    margin-top:2em;
+  }
+
 }
 
 /* media dos cards */
